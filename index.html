@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="user-scalable=no"/>
+	<link rel="manifest" href="manifest.json">
+	<!-- ios support -->
+	<link rel="apple-touch-icon" href="images/icons/icon-72x72.png">
+	<link rel="apple-touch-icon" href="images/icons/icon-96x96.png">
+	<link rel="apple-touch-icon" href="images/icons/icon-128x128.png">
+	<link rel="apple-touch-icon" href="images/icons/icon-144x144.png">
+	<link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+	<link rel="apple-touch-icon" href="images/icons/icon-192x192.png">
+	<link rel="apple-touch-icon" href="images/icons/icon-384x384.png">
+	<link rel="apple-touch-icon" href="images/icons/icon-512x512.png">
+	<meta name="apple-mobile-web-app-status-bar" content="#db4938">
+	<meta name="theme-color" content="#db4938">
+	<title>uCentral - Config UI</title>
+</head>
+<body>
+	<main>
+		<nav>
+			<img src="images/logo.png">
+		</nav>
+		<button class="tablink" onclick="openPage('Home', this)" id="defaultOpen">Home</button>
+		<button class="tablink" onclick="openPage('Devices', this)">Devices</button>
+		<button class="tablink" onclick="openPage('Network', this)">Network</button>
+		<button class="tablink" onclick="openPage('Admin', this)">Admin</button>
+
+		<div id="Home" class="tabcontent" style="display: block;">
+			<h3>Home</h3>
+			<p>Show stats</p>
+		</div>
+
+		<div id="Devices" class="tabcontent" style="display: none;">
+			<h3>Devices</h3>
+			<p>Show devices</p>
+		</div>
+
+		<div id="Network" class="tabcontent" style="display: none;">
+			<h3>Network</h3>
+			<p>Show network</p>
+		</div>
+
+		<div id="Admin" class="tabcontent" style="display: none;">
+			<h3>Admin</h3>
+			<p>Administration</p>
+		</div>
+	<div id="container"></div>
+	</main>
+
+	<script src="js/app.js"></script>
+	<script src="js/ui.js"></script>
+	<script src="js/notify.js"></script>
+	<button id="notify_request_button">Enable notifications</button>
+	<button id="notify_button">Send notifications</button>
+</body>
+</html>
